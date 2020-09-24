@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.google.android.gms.samples.vision.barcodereader.BarcodeCapture" android:id="@id/barcode" android:layout_width="fill_parent" android:layout_height="fill_parent" app:gvb_auto_focus="true" app:gvb_code_format="all_format" app:gvb_rect_colors="@array/rect_color" />
+    <com.qrcodepro.quickrespond.generate.businesscard08.barcodeutils.ScannerOverlay android:background="#65000000" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:line_color="@android:color/holo_red_light" app:line_speed="6" app:line_width="4" app:square_height="250" app:square_width="250" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#5b000000" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+        <ImageView android:id="@id/flash_check" android:padding="10.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_weight="1.0" app:srcCompat="@drawable/qr5_ic_flash" />
+        <ImageView android:id="@id/focus_check" android:padding="10.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_weight="1.0" app:srcCompat="@drawable/qr5_ic_focus" />
+        <ImageView android:id="@id/beep_check" android:padding="10.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_weight="1.0" app:srcCompat="@drawable/qr5_ic_beep" />
+        <ImageView android:id="@id/ad_remove" android:paddingTop="5.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_weight="1.0" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" app:srcCompat="@drawable/ic_remove_ads" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/minus_img" android:paddingLeft="50.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_minus" />
+        <SeekBar android:id="@id/zoom_sb" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_toStartOf="@id/plus_img" android:layout_toEndOf="@id/minus_img" style="@style/Progress_color" />
+        <ImageView android:id="@id/plus_img" android:paddingRight="50.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_plus" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>is_bottom_banner_show_qr_one</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>int_ads_click_count_qr_one</key>
+        <value>3</value>
+    </entry>
+    <entry>
+        <key>is_scan_int_ad_qr_one</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>is_single_banner_onscreen_qr_one</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>FIREBASE_INTER_SHOW_TIME_IN_SECS_QR_ONE</key>
+        <value>10</value>
+    </entry>
+</defaultsMap>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/qr5_icon_image_background_dialog" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerCrop" android:layout_weight="7.5" />
+        <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/id_img_buy_one" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/qr5_icon_image_background_purchar_button_one" android:layout_centerInParent="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0" android:layout_centerInParent="true">
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.3" />
+                <TextView android:textSize="8.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/id_tv_price_yearly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/id_img_buy" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/qr5_icon_image_background_purchar_button" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="8.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/id_tv_policy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:maxLines="2" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/id_img_close" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/qr5_icon_image_close" android:scaleType="fitXY" />
+</RelativeLayout>

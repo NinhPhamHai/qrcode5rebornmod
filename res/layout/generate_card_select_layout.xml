@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/front_card_img" android:background="#ffff7519" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:scaleType="fitXY" android:layout_weight="1.0" />
+    <ImageView android:id="@id/back_card_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:src="@drawable/qr5_ic_gen_card_url_f_1" android:scaleType="fitXY" android:layout_weight="1.0" />
+    <include layout="@layout/generate_card_bottom_layout" />
+</LinearLayout>

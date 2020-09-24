@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/fName_eTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="First name" android:inputType="text" />
+        <EditText android:id="@id/lName_eTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Last name" android:inputType="text" />
+        <EditText android:id="@id/comp_eTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Company" android:inputType="text" />
+        <EditText android:id="@id/job_eTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Job title" android:inputType="text" />
+        <EditText android:id="@id/address_eTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Address" android:inputType="text" />
+        <EditText android:id="@id/mobile_eTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Mobile" android:inputType="number" />
+        <EditText android:id="@id/phone_eTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Phone" android:inputType="number" />
+        <EditText android:id="@id/email_eTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Email " android:inputType="textEmailAddress" />
+        <EditText android:id="@id/web_eTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Website" android:inputType="textWebEditText" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/generated_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:layout_centerInParent="true" />
+        <Button android:textSize="20.0sp" android:id="@id/click_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Generate" android:layout_alignParentEnd="true" />
+    </LinearLayout>
+</ScrollView>

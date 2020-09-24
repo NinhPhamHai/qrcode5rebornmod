@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.UnifiedNativeAdView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="95.0dip" android:minHeight="50.0dip">
+        <TextView style="@style/AppTheme.AdAttribution" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0">
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.google.android.gms.ads.formats.MediaView android:layout_gravity="center_horizontal" android:id="@id/ad_media" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </RelativeLayout>
+                <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:id="@id/ad_price" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+                    <TextView android:textSize="12.0sp" android:id="@id/ad_store" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.5">
+                <ImageView android:id="@id/ad_app_icon" android:layout_width="65.0dip" android:layout_height="fill_parent" android:adjustViewBounds="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_alignParentEnd="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_above="@id/ad_call_to_action" android:layout_alignParentTop="true" android:layout_toStartOf="@id/ad_app_icon" android:layout_alignParentStart="true">
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/ad_headline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                    <TextView android:textSize="10.0sp" android:id="@id/ad_body" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:maxLines="1" android:layout_marginEnd="20.0dip" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:gravity="bottom" android:id="@id/ad_advertiser" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                        <RatingBar android:id="@id/ad_stars" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" style="?android:ratingBarStyleSmall" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/ad_call_to_action" android:background="@drawable/bg_ads" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_alignParentBottom="true" android:layout_toStartOf="@id/ad_app_icon" android:layout_alignParentStart="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.gms.ads.formats.UnifiedNativeAdView>

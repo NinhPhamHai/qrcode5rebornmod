@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/nav_tab" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/nav_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/qr5_uic_barcode_icon_non" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/nav_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@android:color/black" />
+</LinearLayout>

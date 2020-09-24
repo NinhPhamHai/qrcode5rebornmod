@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/type_header_layout" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <ImageView android:background="@drawable/qr5_uic_all_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="@style/TextAppearance.FontPath" android:textSize="25.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/header_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/settings" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="2.0" android:shadowRadius="2.0" />
+    </RelativeLayout>
+    <ScrollView android:orientation="vertical" android:background="@color/main_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/type_header_layout">
+        <RelativeLayout android:background="@color/main_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0sp" android:id="@id/app_setting_txt" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="@string/app_settings" android:paddingStart="25.0dip" />
+            <androidx.cardview.widget.CardView android:id="@id/app_setting_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/app_setting_txt" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                        <ImageView android:id="@id/item_image" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/qr5_ic_vibration_setting" />
+                        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/vibration" android:paddingStart="10.0dip" android:layout_toStartOf="@id/vibration_switch" android:layout_toEndOf="@id/item_image" />
+                        <Switch android:theme="@style/SwitchTheme" android:id="@id/vibration_switch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:switchMinWidth="55.0dip" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/lightGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+                    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                        <ImageView android:id="@id/item_image_2" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/qr5_ic_sound_setting" />
+                        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sound" android:paddingStart="10.0dip" android:layout_toStartOf="@id/sound_switch" android:layout_toEndOf="@id/item_image_2" />
+                        <Switch android:theme="@style/SwitchTheme" android:id="@id/sound_switch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:switchMinWidth="55.0dip" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/lightGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+                    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                        <ImageView android:id="@id/item_image_3" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/qr5_ic_auto_copy_setting" />
+                        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/auto_copy_to_clipboard" android:paddingStart="10.0dip" android:layout_toStartOf="@id/copy_switch" android:layout_toEndOf="@id/item_image_3" />
+                        <Switch android:theme="@style/SwitchTheme" android:id="@id/copy_switch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:switchMinWidth="55.0dip" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/lightGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+                    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                        <ImageView android:id="@id/item_image_4" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/qr5_ic_auto_web_search" />
+                        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/auto_web_search" android:paddingStart="10.0dip" android:layout_toStartOf="@id/web_switch" android:layout_toEndOf="@id/item_image_4" />
+                        <Switch android:theme="@style/SwitchTheme" android:id="@id/web_switch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:switchMinWidth="55.0dip" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/lightGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+                    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                        <ImageView android:id="@id/item_image_5" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/qr5_ic_history_erase_setting" />
+                        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/save_history" android:paddingStart="10.0dip" android:layout_toStartOf="@id/save_history_switch" android:layout_toEndOf="@id/item_image_5" />
+                        <Switch android:theme="@style/SwitchTheme" android:id="@id/save_history_switch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:switchMinWidth="55.0dip" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView android:textSize="18.0sp" android:id="@id/app_bookmark_txt" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="@string/bookmark" android:layout_below="@id/app_setting_card" android:paddingStart="25.0dip" />
+            <androidx.cardview.widget.CardView android:id="@id/app_bookmark_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/app_bookmark_txt" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                <RelativeLayout android:id="@id/bookmark_about" android:padding="15.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                    <ImageView android:id="@id/bookmark_image" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/qr5_bookmark_setting" />
+                    <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/bookmark_history" android:paddingStart="10.0dip" android:layout_toEndOf="@id/bookmark_image" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout android:id="@id/ad_layout_setting" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/app_bookmark_txt">
+                <FrameLayout android:id="@id/fl_adplaceholder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+            </RelativeLayout>
+            <TextView android:textSize="18.0sp" android:id="@id/general_txt" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="@string/general" android:layout_below="@id/ad_layout_setting" android:paddingStart="25.0dip" />
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_below="@id/general_txt" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:id="@id/general_about" android:padding="15.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                        <ImageView android:id="@id/general_image" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/qr5_ic_rate_us" />
+                        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/rate_us" android:paddingStart="10.0dip" android:layout_toEndOf="@id/general_image" />
+                    </RelativeLayout>
+                    <View android:background="@color/lightGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+                    <RelativeLayout android:id="@id/general_policy" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                        <ImageView android:id="@id/general_image_2" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/qr5_ic_privacy__setting" />
+                        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/privacy_policy" android:paddingStart="10.0dip" android:layout_toEndOf="@id/general_image_2" />
+                    </RelativeLayout>
+                    <View android:background="@color/lightGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+                    <RelativeLayout android:id="@id/general_tell" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                        <ImageView android:id="@id/general_image_3" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/qr5_ic_share_setting" />
+                        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tell_your_friends" android:paddingStart="10.0dip" android:layout_toEndOf="@id/general_image_3" />
+                    </RelativeLayout>
+                    <View android:background="@color/lightGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+                    <RelativeLayout android:id="@id/general_delete" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                        <ImageView android:id="@id/general_image_4" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/qr5_ic_delete_history_setting" />
+                        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/delete_history" android:paddingStart="10.0dip" android:layout_toEndOf="@id/general_image_4" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/colorPickerViewFrame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.d.colorpickerview.ColorPickerView android:id="@id/ColorPickerView" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_margin="20.0dip" app:palette="@drawable/qr5_palette" app:selector="@drawable/qr5_wheel" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/alphaSlideBarFrame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.d.colorpickerview.sliders.AlphaSlideBar android:id="@id/AlphaSlideBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" app:selector_AlphaSlideBar="@drawable/qr5_wheel" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/brightnessSlideBarFrame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.d.colorpickerview.sliders.BrightnessSlideBar android:id="@id/BrightnessSlideBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" app:selector_BrightnessSlider="@drawable/qr5_wheel" />
+    </FrameLayout>
+    <Space android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

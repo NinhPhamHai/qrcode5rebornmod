@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ad_unit" android:background="@drawable/bg_main_native_ads" android:layout_width="fill_parent" android:layout_height="250.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/ad_choices_container" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <RelativeLayout android:background="@color/main_native_ad_colors" android:layout_width="fill_parent" android:layout_height="63.0dip">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.75">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/native_ad_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                <TextView android:textSize="10.0sp" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/native_ad_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:id="@id/native_ad_sponsored_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <Button android:textSize="14.0sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/native_ad_call_to_action" android:background="@drawable/bg_ads" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:background="@drawable/bg_ads_ad" android:layout_width="20.0dip" android:layout_height="12.0dip" android:text="AD" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="3.0">
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:id="@id/native_ad_social_context" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

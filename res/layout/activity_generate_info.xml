@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/top_gen_layout" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="20.0dip">
+        <TextView android:textAppearance="@style/TextAppearance.FontPath" android:textSize="20.0sp" android:textColor="@color/history_item_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/enter_information" />
+        <ImageView android:id="@id/back_gene_img" android:padding="5.0dip" android:layout_width="30.0dip" android:layout_height="fill_parent" app:srcCompat="@drawable/ic_back" />
+    </RelativeLayout>
+    <include android:id="@id/gen_url_layout" android:visibility="gone" layout="@layout/generate_url_info" />
+    <include android:id="@id/gen_card_info" android:visibility="gone" layout="@layout/generate_card_info" />
+    <include android:id="@id/gen_text_layout" android:visibility="gone" layout="@layout/generate_text_info" />
+    <include android:id="@id/gen_sms_layout" android:visibility="gone" layout="@layout/generate_sms_info" />
+    <include android:id="@id/gen_pro_layout" android:visibility="gone" layout="@layout/generate_product_info" />
+    <include android:id="@id/gen_wifi_layout" android:visibility="gone" layout="@layout/generate_wifi_info" />
+    <include android:id="@id/gen_tel_layout" android:visibility="gone" layout="@layout/generate_tel_info" />
+    <include android:id="@id/gen_email_layout" android:visibility="gone" layout="@layout/generate_email_info" />
+    <include android:id="@id/gen_geo_layout" android:visibility="gone" layout="@layout/generate_geo_info" />
+    <include android:id="@id/gen_isbn_layout" android:visibility="gone" layout="@layout/generate_isbn_info" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/generate_btn" android:background="@drawable/qr5_uic_btn_bg" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="20.0dip" android:text="@string/generate" android:layout_alignParentBottom="true" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+</RelativeLayout>

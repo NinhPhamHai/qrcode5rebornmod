@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/main_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/header_layout" android:layout_width="fill_parent" android:layout_height="80.0dip">
+            <ImageView android:background="@drawable/qr5_uic_all_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/TextAppearance.FontPath" android:textSize="25.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/header_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/filters" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="2.0" android:shadowRadius="2.0" />
+            <ImageView android:gravity="center_vertical" android:id="@id/back_img" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:paddingStart="25.0dip" android:layout_marginStart="5.0dip" app:srcCompat="@drawable/ic_back" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/type_recycler_view" android:background="@color/main_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header_layout" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+        <LinearLayout android:id="@id/ad_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="40.0dip" android:layout_below="@id/type_recycler_view" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+            <FrameLayout android:id="@id/fl_adplaceholder" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

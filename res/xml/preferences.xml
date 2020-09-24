@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="Beep" android:key="key_beep" android:defaultValue="true" />
+    <CheckBoxPreference android:title="Auto Copy to clipboard" android:key="key_copy_clipboard" android:defaultValue="false" />
+    <CheckBoxPreference android:title="Use auto focus" android:key="key_use_auto_focus" android:defaultValue="true" />
+</PreferenceScreen>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="4.0" android:layout_below="@id/view_offset_helper"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:background="@drawable/bg_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/wifi_connect_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:onClick="buttonClick">
+            <ImageView android:id="@id/search_img" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginBottom="5.0dip" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_wifi" />
+            <com.g.textviewrichdrawable.TextViewRichDrawable android:textSize="10.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connect" android:layout_below="@id/search_img" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:background="@drawable/bg_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/copy_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:onClick="buttonClick">
+            <ImageView android:id="@id/copy_img" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginBottom="5.0dip" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_copy" />
+            <com.g.textviewrichdrawable.TextViewRichDrawable android:textSize="10.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/copy" android:layout_below="@id/copy_img" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:background="@drawable/bg_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/share_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:onClick="buttonClick">
+            <ImageView android:id="@id/share_img" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginBottom="5.0dip" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_share" />
+            <com.g.textviewrichdrawable.TextViewRichDrawable android:textSize="10.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share" android:layout_below="@id/share_img" android:layout_centerHorizontal="true" /> /> </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:background="@drawable/bg_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/bookmark_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:onClick="buttonClick">
+            <ImageView android:id="@id/bookmark_img" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginBottom="5.0dip" android:layout_centerHorizontal="true" app:srcCompat="@drawable/bookmark" />
+            <com.g.textviewrichdrawable.TextViewRichDrawable android:textSize="10.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bookmark" android:layout_below="@id/bookmark_img" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

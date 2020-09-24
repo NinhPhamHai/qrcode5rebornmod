@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/generate_btn" android:layout_below="@id/top_gen_layout" android:paddingStart="20.0dip" android:paddingEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="15.0sp" android:textColor="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/first_name" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:counterEnabled="true" app:counterMaxLength="50">
+            <EditText android:textSize="18.0sp" android:id="@id/fName_eTxt" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="50" android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:background="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/last_name" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:counterEnabled="true" app:counterMaxLength="50">
+            <EditText android:textSize="18.0sp" android:id="@id/lName_eTxt" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="50" android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:background="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/company" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:counterEnabled="true" app:counterMaxLength="100">
+            <EditText android:textSize="18.0sp" android:id="@id/comp_eTxt" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="100" android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:background="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/job_title" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:counterEnabled="true" app:counterMaxLength="100">
+            <EditText android:textSize="18.0sp" android:id="@id/job_eTxt" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="100" android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:background="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/address" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:counterEnabled="true" app:counterMaxLength="500">
+            <EditText android:textSize="18.0sp" android:id="@id/address_eTxt" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="500" android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:background="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/mobile" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:counterEnabled="true" app:counterMaxLength="20">
+            <EditText android:textSize="18.0sp" android:id="@id/mobile_eTxt" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="20" android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:background="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/phone" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:counterEnabled="true" app:counterMaxLength="20">
+            <EditText android:textSize="18.0sp" android:id="@id/phone_eTxt" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="20" android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:background="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/email" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:counterEnabled="true" app:counterMaxLength="50">
+            <EditText android:textSize="18.0sp" android:id="@id/email_eTxt" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="50" android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:background="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/website" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:counterEnabled="true" app:counterMaxLength="500">
+            <EditText android:textSize="18.0sp" android:id="@id/web_eTxt" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="500" android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:background="@color/history_item_text_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <FrameLayout android:id="@id/fl_adplaceholder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" />
+    </LinearLayout>
+</ScrollView>

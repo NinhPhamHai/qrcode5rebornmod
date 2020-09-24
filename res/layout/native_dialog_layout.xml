@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/cross_image" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" app:srcCompat="@drawable/ic_cross" />
+    <FrameLayout android:id="@id/fl_adplaceholder_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/cross_image" />
+</RelativeLayout>

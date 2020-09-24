@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/main_history_vp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="120.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="120.0dip">
+        <ProgressBar android:id="@id/loading_pb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/top_layout" android:background="@drawable/qr5_uic_generate_header" android:layout_width="fill_parent" android:layout_height="130.0dip">
+        <RelativeLayout android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="30.0dip">
+            <TextView android:textAppearance="@style/TextAppearance.FontPath" android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/header_history_txt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/qr_amp_barcode_history" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="2.0" android:shadowRadius="2.0" />
+            <ImageView android:id="@id/main_bookmark_filter_img" android:padding="8.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginEnd="0.0dip" app:srcCompat="@drawable/ic_filter_bookmark" />
+            <ImageView android:id="@id/main_filter_img" android:padding="10.0dip" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_filter_types" />
+        </RelativeLayout>
+        <com.google.android.material.tabs.TabLayout android:id="@id/main_history_tab" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" app:tabIndicatorColor="@color/yellow" app:tabIndicatorHeight="2.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

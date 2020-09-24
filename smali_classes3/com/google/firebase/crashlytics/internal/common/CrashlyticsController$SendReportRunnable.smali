@@ -1,0 +1,95 @@
+.class final Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$SendReportRunnable;
+.super Ljava/lang/Object;
+.source "CrashlyticsController.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "SendReportRunnable"
+.end annotation
+
+
+# instance fields
+.field private final context:Landroid/content/Context;
+
+.field private final dataCollectionToken:Z
+
+.field private final report:Lcom/google/firebase/crashlytics/internal/report/model/Report;
+
+.field private final reportUploader:Lcom/google/firebase/crashlytics/internal/report/ReportUploader;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Lcom/google/firebase/crashlytics/internal/report/model/Report;Lcom/google/firebase/crashlytics/internal/report/ReportUploader;Z)V
+    .locals 0
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "report"    # Lcom/google/firebase/crashlytics/internal/report/model/Report;
+    .param p3, "reportUploader"    # Lcom/google/firebase/crashlytics/internal/report/ReportUploader;
+    .param p4, "dataCollectionToken"    # Z
+
+    .line 1843
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 1844
+    iput-object p1, p0, Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$SendReportRunnable;->context:Landroid/content/Context;
+
+    .line 1845
+    iput-object p2, p0, Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$SendReportRunnable;->report:Lcom/google/firebase/crashlytics/internal/report/model/Report;
+
+    .line 1846
+    iput-object p3, p0, Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$SendReportRunnable;->reportUploader:Lcom/google/firebase/crashlytics/internal/report/ReportUploader;
+
+    .line 1847
+    iput-boolean p4, p0, Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$SendReportRunnable;->dataCollectionToken:Z
+
+    .line 1848
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 3
+
+    .line 1852
+    iget-object v0, p0, Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$SendReportRunnable;->context:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/google/firebase/crashlytics/internal/common/CommonUtils;->canTryConnection(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 1853
+    return-void
+
+    .line 1856
+    :cond_0
+    invoke-static {}, Lcom/google/firebase/crashlytics/internal/Logger;->getLogger()Lcom/google/firebase/crashlytics/internal/Logger;
+
+    move-result-object v0
+
+    const-string v1, "Attempting to send crash report at time of crash..."
+
+    invoke-virtual {v0, v1}, Lcom/google/firebase/crashlytics/internal/Logger;->d(Ljava/lang/String;)V
+
+    .line 1858
+    iget-object v0, p0, Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$SendReportRunnable;->reportUploader:Lcom/google/firebase/crashlytics/internal/report/ReportUploader;
+
+    iget-object v1, p0, Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$SendReportRunnable;->report:Lcom/google/firebase/crashlytics/internal/report/model/Report;
+
+    iget-boolean v2, p0, Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$SendReportRunnable;->dataCollectionToken:Z
+
+    invoke-virtual {v0, v1, v2}, Lcom/google/firebase/crashlytics/internal/report/ReportUploader;->uploadReport(Lcom/google/firebase/crashlytics/internal/report/model/Report;Z)Z
+
+    .line 1859
+    return-void
+.end method

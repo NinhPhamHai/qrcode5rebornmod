@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:icon="@drawable/ic_focus_thick" android:id="@id/nav_scan" android:title="@string/scan" />
+        <item android:icon="@drawable/ic_history_clock_button" android:id="@id/nav_history" android:title="@string/history" />
+        <item android:icon="@drawable/bookmark" android:id="@id/nav_bookmark" android:title="@string/bookmark" />
+        <item android:icon="@drawable/ic_settings_gears" android:id="@id/nav_settings" android:title="@string/settings" />
+    </group>
+</menu>
